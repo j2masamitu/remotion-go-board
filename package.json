@@ -1,0 +1,49 @@
+{
+  "name": "remotion-go-board",
+  "version": "0.1.0",
+  "description": "A Remotion component that renders animated Go board sequences from SGF game records",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "remotion": ">=4.0"
+  },
+  "devDependencies": {
+    "react": "^19.2.3",
+    "remotion": "^4.0.435",
+    "@types/react": "^19.2.7",
+    "tsup": "^8.4.0",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "remotion",
+    "go",
+    "igo",
+    "sgf",
+    "baduk",
+    "weiqi",
+    "animation",
+    "go-board"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j2masamitu/remotion-go-board.git"
+  }
+}
