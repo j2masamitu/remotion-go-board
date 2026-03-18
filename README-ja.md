@@ -10,6 +10,16 @@ npm install remotion-go-board
 
 > `react` と `remotion` が peerDependencies です。
 
+### エージェントスキル（AI コーディングツール向け）
+
+Claude Code や Antigravity などの AI コーディングツールを使う場合は、エージェントスキルをインストールすると正確なコード生成が得られます:
+
+```bash
+npx skills add j2masamitu/remotion-go-board
+```
+
+GoBoard の API、SGF フォーマットのルール、ベストプラクティスを AI に教えます。
+
 ## 基本的な使い方
 
 ```tsx

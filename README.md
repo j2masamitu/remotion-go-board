@@ -12,6 +12,16 @@ npm install remotion-go-board
 
 > `react` and `remotion` are peer dependencies.
 
+### Agent Skill (for AI coding tools)
+
+If you use AI coding tools such as Claude Code or Antigravity, install the agent skill to get accurate code generation:
+
+```bash
+npx skills add j2masamitu/remotion-go-board
+```
+
+This teaches the AI the correct GoBoard API, SGF format rules, and best practices.
+
 ## Basic Usage
 
 ```tsx
