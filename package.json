@@ -1,6 +1,6 @@
 {
   "name": "remotion-go-board",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Remotion component that renders animated Go board sequences from SGF game records",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -86,8 +86,9 @@ export const GoBoard: React.FC<GoBoardProps> = ({
 
   // Board rendering calculations
   const size = sgfData.size;
-  const margin = 20;
-  const cellSize = (boardSize - margin * 2) / (size - 1);
+  const outerPadding = 4;
+  const cellSize = (boardSize - outerPadding * 2) / size;
+  const margin = cellSize * 0.5 + outerPadding;
   const stoneRadius = cellSize * 0.47;
 
   // Spring animation for the latest stone (disabled when speed is too low)
